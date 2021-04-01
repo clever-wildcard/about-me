@@ -26,7 +26,7 @@
     .navbar {
         position: fixed;
         overflow: hidden;
-        background-color: HSL(199, 30%, 13%);
+        background-color:  HSL(199, 30%, 13%);
         top: 0;
         width: 100%;
         padding-left: 20px;
@@ -98,7 +98,7 @@
     #hero-image {
         margin-top: 59px;
         /*background-image: url("Screen%20Shot%202021-04-01%20at%2012.51.44%20PM.png");*/
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("hero.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.png");
         height: 50%;
         /*background-position: center left;*/
         background-repeat: no-repeat;
@@ -108,40 +108,26 @@
 
     }
 
-    #space {
-        height: calc(100% - 170px);
-    }
+    /*.space {*/
+    /*    height: calc(30% - 85px);*/
+    /*}*/
 
     #hero-text {
-
-        /*box-sizing: border-box;*/
-        /*vertical-align: bottom;*/
-        padding-left: var(--left-space);
+        /*position:absolute;*/
+        /*top:35%;*/
+        /*left:50%;*/
+        /*transform:translate(-50%,-50%);*/
+        /*--ms-transform:translate(-50%,-50%)*/
+        /*-ms-transform:translate(-50%,0%);*/
         /*text-align: center;*/
-        /*bottom: 25%;*/
-        /*top: 50%;*/
-        /*left: 50%;*/
-        /*transform: translate(-50%, -50%);*/
-        /*color: white;*/
-    }
-    #hero-text h1 {
-        margin-top: 0px;
     }
 
-    /*.hero-text button {*/
-    /*    border: none;*/
-    /*    outline: 0;*/
-    /*    display: inline-block;*/
-    /*    padding: 10px 25px;*/
-    /*    color: black;*/
-    /*    background-color: #ddd;*/
-    /*    text-align: center;*/
-    /*    cursor: pointer;*/
-    /*}*/
-    /*<img src=*/
-    /*width="2558"*/
-    /*height="1417"*/
-    /*alt="Desktop screenshot of intellij and firefox."/>*/
+    #hero-image p {
+        padding-top: 5%;
+        padding-left: var(--left-space);
+        font-size: 28px;
+
+    }
     .body-section {
         height: 300px;
         display: block;
@@ -166,13 +152,11 @@
 </style>
 <body>
 
-
-
 <div class="navbar" id="navbar-div-id">
     <a href="javascript:void(0);" class="icon-name" onclick="navbarRespond()">
         <i class="fa fa-bars"></i>
     </a>
-    <a class="icon-name" href="#banner">
+    <a class="icon-name" href="">
         Anna | Career
     </a>
 </div>
@@ -201,16 +185,9 @@
 </div>
 
 <div id="hero-image">
-<div id="space"></div>
-    <div id="hero-text">
-        <h1>
-            I am Anna
-        </h1>
         <p>
-            And I'm a Software Engineer
+            Software Engineer
         </p>
-        <button>Hire Me</button>
-    </div>
 </div>
 
 <div id="main">
@@ -239,18 +216,31 @@
 <script>
     var open = false;
     function navbarRespond(newTop) {
-        if (open === false) {
-            document.getElementById("navbar-dropdown").style.display = "block";
-            document.getElementById("main").style.display = "none";
-            open = true;
-        } else {
-            document.getElementById("navbar-dropdown").style.display = "none";
-            document.getElementById("main").style.display = "block";
-            open = false;
-        }
 
-        if (newTop != '') {
-            document.getElementById(newTop).style.paddingTop = "63px";
+
+
+        if (newTop != 'hero-image') {
+            if (open === false) {
+                document.getElementById("navbar-dropdown").style.display = "block";
+                document.getElementById("main").style.display = "none";
+                document.getElementById("hero-image").style.display = "none";
+                open = true;
+            } else {
+                document.getElementById("navbar-dropdown").style.display = "none";
+                document.getElementById("main").style.display = "block";
+                document.getElementById("hero-image").style.display = "block";
+                open = false;
+            }
+        }
+if (newTop === 'hero-image') {
+    document.getElementById(newTop).style.boxSizing = 'none';
+    document.getElementById(newTop).style.marginTop = "57px";
+    document.getElementById(newTop).style.paddingTop = "57px";
+
+
+}
+        else if (newTop != '') {
+            document.getElementById(newTop).style.paddingTop = "57px";
         }
 
         var x = document.getElementById("navbar-div-id");
