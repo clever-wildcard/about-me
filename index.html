@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Anna</title>
+</head>
+<style>
+    * {box-sizing: border-box; }
+    :root {
+        --left-space: 40px;
+        --hover-color: HSL(199, 18%, 28%);
+    }
+
+    html, body {
+        margin: 0;
+        font-family: Arial, Helvetica Neue, sans-serif;
+        font-size: 20px;
+        color: white;
+        display: block;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        position: fixed;
+        overflow: hidden;
+        background-color: HSL(199, 30%, 13%);
+        top: 0;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .navbar a.icon-name {
+        display: block;
+        float: left;
+        text-align: center;
+        color: white;
+        padding: 15px 18px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .navbar a:hover {
+        background-color: var(--hover-color);
+    }
+
+    #navbar-dropdown {
+        padding-top: 58px;
+        display: none;
+        background-color: HSL(199, 30%, 19%);
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    #navbar-dropdown .navbar-div-holds-link {
+        height: 68px;
+    }
+
+    .navbar-div-holds-link a {
+        padding-left: var(--left-space);
+        box-sizing: border-box;
+        padding-top: 20px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        /*box-sizing: border-box;*/
+        height: 100%;
+        width: 100%;
+        font-size: 32px;
+        font-family: Arial, Helvetica Neue, sans-serif;
+        font-weight: lighter;
+        /*padding-top: calc(12.5% - 20px);*/
+    }
+
+    .navbar-div-holds-link a:hover {
+        background-color: var(--hover-color);
+    }
+
+
+
+    /*.navbar a {*/
+    /*    float: left;*/
+    /*    display: block;*/
+    /*    text-align: center;*/
+    /*    padding: 20px 18px;*/
+    /*    text-decoration: none;*/
+    /*    color: white;*/
+    /*    height: 100%;*/
+    /*}*/
+
+
+
+
+
+
+    #hero-image {
+        margin-top: 59px;
+        /*background-image: url("Screen%20Shot%202021-04-01%20at%2012.51.44%20PM.png");*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("hero.png");
+        height: 50%;
+        /*background-position: center left;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*position: relative;*/
+        min-height: 190px;
+
+    }
+
+    #space {
+        height: calc(100% - 170px);
+    }
+
+    #hero-text {
+
+        /*box-sizing: border-box;*/
+        /*vertical-align: bottom;*/
+        padding-left: var(--left-space);
+        /*text-align: center;*/
+        /*bottom: 25%;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        /*color: white;*/
+    }
+    #hero-text h1 {
+        margin-top: 0px;
+    }
+
+    /*.hero-text button {*/
+    /*    border: none;*/
+    /*    outline: 0;*/
+    /*    display: inline-block;*/
+    /*    padding: 10px 25px;*/
+    /*    color: black;*/
+    /*    background-color: #ddd;*/
+    /*    text-align: center;*/
+    /*    cursor: pointer;*/
+    /*}*/
+    /*<img src=*/
+    /*width="2558"*/
+    /*height="1417"*/
+    /*alt="Desktop screenshot of intellij and firefox."/>*/
+    .body-section {
+        height: 300px;
+        display: block;
+        padding-left: var(--left-space);
+        padding-top: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .one-of-two {
+        background-color: HSL(199, 30%, 19%);
+    }
+
+    .two-of-two {
+        background-color: HSL(199, 30%, 23%);
+    }
+
+    footer {
+        height: 300px;
+    }
+
+</style>
+<body>
+
+
+
+<div class="navbar" id="navbar-div-id">
+    <a href="javascript:void(0);" class="icon-name" onclick="navbarRespond()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a class="icon-name" href="#banner">
+        Anna | Career
+    </a>
+</div>
+
+<div id="navbar-dropdown">
+    <div class="navbar-div-holds-link">
+        <a href="#job-posting-details" onclick="navbarRespond('job-posting-details')">
+            Position Features
+        </a>
+    </div>
+    <div class="navbar-div-holds-link">
+        <a href="#position-summary" onclick="navbarRespond('position-summary')">
+            Position Details
+        </a>
+    </div>
+    <div class="navbar-div-holds-link">
+        <a href="#about-anna" onclick="navbarRespond('about-anna')">
+            About Anna
+        </a>
+    </div>
+    <div class="navbar-div-holds-link">
+        <a href="#benefits" onclick="navbarRespond('benefits')">
+            Health Benefits
+        </a>
+    </div>
+</div>
+
+<div id="hero-image">
+<div id="space"></div>
+    <div id="hero-text">
+        <h1>
+            I am Anna
+        </h1>
+        <p>
+            And I'm a Software Engineer
+        </p>
+        <button>Hire Me</button>
+    </div>
+</div>
+
+<div id="main">
+
+    <div class="body-section one-of-two" id="job-posting-details">
+        <h3>Position Overview</h3>
+        <p>Some words</p>
+    </div>
+    <div class="body-section two-of-two" id="position-summary">
+        <h3>Position Details</h3>
+        <p>Some words</p>
+    </div>
+    <div class="body-section one-of-two" id="about-anna">
+        <h3>About Anna</h3>
+        <p>Some words</p>
+    </div>
+    <div class="body-section two-of-two" id="benefits">
+        <h3>Benefits</h3>
+        <p>Some words</p>
+    </div>
+    <footer>
+        Footery words
+    </footer>
+</div>
+
+<script>
+    var open = false;
+    function navbarRespond(newTop) {
+        if (open === false) {
+            document.getElementById("navbar-dropdown").style.display = "block";
+            document.getElementById("main").style.display = "none";
+            open = true;
+        } else {
+            document.getElementById("navbar-dropdown").style.display = "none";
+            document.getElementById("main").style.display = "block";
+            open = false;
+        }
+
+        if (newTop != '') {
+            document.getElementById(newTop).style.paddingTop = "63px";
+        }
+
+        var x = document.getElementById("navbar-div-id");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+</body>
+
+</html>
