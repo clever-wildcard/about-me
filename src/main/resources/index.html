@@ -47,7 +47,7 @@
             padding-left: 6%;
             padding-right: 6%;
         }
-        #fileStructure {
+        .fileStructure {
             padding-left: 6%;
         }
         .navbar {
@@ -115,28 +115,29 @@
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3">
     <h3 class="margin text-center">HTML, Courtesy of Bootstrap and W3</h3>
-<!--    <div class="row">-->
         <p>In project directory, made a new file: index.html. Checked out W3's Bootstrap templates.
             Found <a href="https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp">Simply Me</a> favorable.
             Shamelessly copied <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_me_complete&stacked=h">full source code</a>.
             Pasted source code in about-me project index.html file. Added some words.</p>
         <p>$ git add . && git commit -m "Justin Case" && git push --set-upstream origin draft-zero</p>
         <div class="col-sm-6">
-            <img id="fileStructure" alt="Project's current file structure." src="fileStructure.png"  style="width:100%" />
+            <img class="fileStructure" alt="Project's current file structure." src="fileStructure.png" style="width:100%" />
         </div>
-<!--    </div>-->
-<!--    <div class="row">-->
-
-<!--    </div>-->
 </div>
 
 <!-- Fourth Container -->
 <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">What Am I?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-        <span class="glyphicon glyphicon-search"></span> Search
-    </a>
+    <h3 class="margin">Spring Boot</h3>
+    <p>Generated project skeleton using<a href="https://start.spring.io/">Spring Initializer.</a>
+         Unzipped project.</p>
+
+    <p>~/codebase/about-me  (draft-zero) $ mv ~/Downloads/about-me/* .</p>
+
+        Moved contents into about-me project. Moved index.html and *.png files into appropriate location.
+    Added Comment.java class file, CommentRepository.java interface file, and Controller.java class file.</p>
+    <div class="col-sm-6">
+        <img class="fileStructure" alt="Project's current file structure." src="fileStructure.png" style="width:100%" />
+    </div>
 </div>
 
 <!-- Fifth Container (Grid) -->
