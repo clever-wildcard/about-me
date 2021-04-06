@@ -1,210 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About Anna</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-2 ul {
+            padding-left: 6%;
+            padding-right: 6%;
+            text-align: left;
+
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .container-fluid p {
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+        }
+        .row.text-left p {
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+    </style>
 </head>
-<style>
-    * {box-sizing: border-box; }
-    :root {
-        --left-space: 40px;
-        --hover-color: HSL(199, 18%, 28%);
-    }
-
-    html, body {
-        margin: 0;
-        font-family: Arial, Helvetica Neue, sans-serif;
-        font-size: 20px;
-        color: white;
-        display: block;
-        height: 100%;
-        box-sizing: border-box;
-    }
-
-    .navbar {
-        position: fixed;
-        overflow: hidden;
-        background-color:  HSL(199, 30%, 13%);
-        top: 0;
-        width: 100%;
-        padding-left: 20px;
-    }
-
-    .navbar a.icon-name {
-        display: block;
-        float: left;
-        text-align: center;
-        color: white;
-        padding: 15px 18px;
-        text-decoration: none;
-        font-size: 25px;
-    }
-
-    .navbar a:hover {
-        background-color: var(--hover-color);
-    }
-
-    #navbar-dropdown {
-        padding-top: 58px;
-        display: none;
-        background-color: HSL(199, 30%, 19%);
-        height: 100%;
-        box-sizing: border-box;
-    }
-
-    #navbar-dropdown .navbar-div-holds-link {
-        height: 68px;
-    }
-
-    .navbar-div-holds-link a {
-        padding-left: var(--left-space);
-        box-sizing: border-box;
-        padding-top: 20px;
-        color: white;
-        text-decoration: none;
-        display: block;
-        height: 100%;
-        width: 100%;
-        font-size: 32px;
-        font-family: Arial, Helvetica Neue, sans-serif;
-        font-weight: lighter;
-    }
-
-    .navbar-div-holds-link a:hover {
-        background-color: var(--hover-color);
-    }
-
-    #hero-image {
-        margin-top: 59px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.png");
-        height: 35%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 190px;
-    }
-
-    #hero-image p {
-        padding-top: 5%;
-        padding-left: var(--left-space);
-        font-size: 28px;
-
-    }
-
-    .body-section {
-        /*height: 500px;*/
-        font-size: 16px;
-        padding-bottom: 10px;
-        display: block;
-        padding-left: var(--left-space);
-        padding-top: 10px;
-        box-sizing: border-box;
-    }
-
-    .one-of-two {
-        background-color: HSL(199, 30%, 19%);
-    }
-
-    .two-of-two {
-        background-color: HSL(199, 30%, 23%);
-    }
-
-    footer {
-        height: 300px;
-    }
-
-</style>
 <body>
 
-<div class="navbar" id="navbar-div-id">
-    <a href="javascript:void(0);" class="icon-name" onclick="navbarRespond()">
-        <i class="fa fa-bars"></i>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Anna</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://getbootstrap.com/">BOOSTRAP</a></li>
+                <li><a href="https://spring.io/">SPRING BOOT</a></li>
+                <li><a href="https://aws.amazon.com/">AWS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">How did I get here?</h3>
+    <img src="placeholder.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <h3>Hosting a website with AWS.</h3>
+</div>
+
+
+<p></p>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Version and Source Control Management</h3>
+    <ul>
+        <li>Created a new github repository: <a href="https://github.com/new">https://github.com/new</a></li>
+        <li><a href="https://github.com/clever-wildcard/about-me.git">Cloned repo</a></li>
+        <li>Kindly asked Intellij to <a href="https://www.jetbrains.com/help/idea/set-up-a-git-repository.html#clone-repo">create a new project from VCS</a></li>
+        <li>$ git checkout -b draft-zero</li>
+    </ul>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3">
+    <h3 class="margin text-center">HTML, Courtesy of Bootstrap and W3</h3>
+    <p>In project directory, made a new file: index.html. Checked out W3's Bootstrap templates.
+        Found <a href="https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp">Simply Me</a> favorable.
+        Shamelessly copied <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_me_complete&stacked=h">full source code</a>.
+        Pasted source code in about-me project index.html file. Added some words.</p>
+    <div class="col-sm-6">
+        <img alt="Project's current file structure." src="fileStructure.png"  style="width:100%" />
+    </div>
+    <p>git add . && git commit -m "Justin Case" && git push</p>
+</div>
+
+<!-- Fourth Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">What Am I?</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
     </a>
-    <a class="icon-name" href="">
-        Anna | Career
+</div>
+
+<!-- Fifth Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Where To Find Me?</h3><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+    <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
     </a>
-</div>
+</footer>
 
-<div id="navbar-dropdown">
-    <div class="navbar-div-holds-link">
-        <a href="#job-posting-details" onclick="navbarRespond('job-posting-details')">
-            Position Overview
-        </a>
-    </div>
-    <div class="navbar-div-holds-link">
-        <a href="#ideal-job-purpose" onclick="navbarRespond('position-summary')">
-            Position Details
-        </a>
-    </div>
-    <div class="navbar-div-holds-link">
-        <a href="#job-requirements" onclick="navbarRespond('about-anna')">
-            About Anna
-        </a>
-    </div>
-    <div class="navbar-div-holds-link">
-        <a href="#preferred-requirements" onclick="navbarRespond('benefits')">
-            Health Benefits
-        </a>
-    </div>
-</div>
-
-<div id="hero-image">
-        <p>
-            Software Engineer
-        </p>
-</div>
-
-<div id="main">
-    <div class="body-section one-of-two" id="job-posting-details">
-        <p><b>Job ID:</b> R012345</p>
-        <p><b>Date posted:</b> 04/01/2021</p>
-</div>
-    <div class="body-section two-of-two" id="ideal-job-purpose">
-        <h3>Ideal Job Purpose</h3>
-        <p>Some words</p>
-    </div>
-    <div class="body-section one-of-two" id="job-requirements">
-        <h3>Job Requirements</h3>
-        <p>Some words</p>
-    </div>
-    <div class="body-section two-of-two" id="preferred-requirements">
-        <h3>Preferred Requirements</h3>
-        <p>Some words</p>
-    </div>
-    <div class="body-section one-of-two" id="compensation">
-        <h3>Compensation</h3>
-        <p>https://www.glassdoor.com/member/home/index.htm</p>
-    </div>
-    <div class="body-section two-of-two" id="benefits">
-        <h3>Benefits</h3>
-        <p>asdf</p>
-    </div>
-    <footer>
-        Footery words
-    </footer>
-</div>
-
-<script>
-    var open = false;
-    function navbarRespond(newTop) {
-        if (open === false) {
-            document.getElementById("navbar-dropdown").style.display = "block";
-            document.getElementById("main").style.display = "none";
-            document.getElementById("hero-image").style.display = "none";
-            open = true;
-        } else {
-            document.getElementById("navbar-dropdown").style.display = "none";
-            document.getElementById("main").style.display = "block";
-            document.getElementById("hero-image").style.display = "block";
-            open = false;
-        }
-
-        if (newTop != '') {
-            document.getElementById(newTop).style.paddingTop = "57px";
-        }
-    }
-</script>
 </body>
-
 </html>
