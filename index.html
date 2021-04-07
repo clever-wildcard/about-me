@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-2 ul {
+            padding-left: 6%;
+            padding-right: 6%;
+            text-align: left;
+
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .container-fluid p {
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+        }
+        .row.text-left p {
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Anna</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://getbootstrap.com/">BOOSTRAP</a></li>
+                <li><a href="https://aws.amazon.com/">AWS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">How did I get here?</h3>
+    <img src="src/main/resources/placeholder.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <h3>Hosting a website with AWS.</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Version and Source Control Management</h3>
+    <ul>
+        <li>Created a new github repository: <a href="https://github.com/new">https://github.com/new</a></li>
+        <li><a href="https://github.com/clever-wildcard/about-me.git">Cloned repo</a></li>
+        <li>Kindly asked Intellij to <a href="https://www.jetbrains.com/help/idea/set-up-a-git-repository.html#clone-repo">create a new project from VCS</a></li>
+        <li>$ git checkout -b draft-zero</li>
+    </ul>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3">
+    <h3 class="margin text-center">HTML, Courtesy of Bootstrap and W3</h3>
+        <p>In project directory, made a new file: index.html. Checked out W3's Bootstrap templates.
+            Found <a href="https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp">Simply Me</a> favorable.
+            Shamelessly copied <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_me_complete&stacked=h">full source code</a>.
+            Pasted source code in about-me project index.html file. Added some words.</p>
+        <p>$ git add . && git commit -m "Justin Case" && git push --set-upstream origin draft-zero</p>
+        <div>
+            <p>/Users/gandalf/codebase/about-me</p>
+            <p>
+                <span>&#8212;</span> .gitignore<br>
+                <span>&#8212;</span> index.html<br>
+                <span>&#8212;</span> LICENSE<br>
+                <span>&#8212;</span> placeholder.png<br>
+                <span>&#8212;</span> README.md<br>
+            </p>
+        </div>
+</div>
+
+<!-- Fourth Container (Grid) -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">AWS</h3><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+    <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+    </a>
+</footer>
+</body>
+</html>
