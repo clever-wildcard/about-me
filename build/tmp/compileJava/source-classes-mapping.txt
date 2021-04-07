@@ -1,8 +1,0 @@
-com/cleverwildcard/aboutme/CommentRepository.java
- com.cleverwildcard.aboutme.CommentRepository
-com/cleverwildcard/aboutme/AboutMeApplication.java
- com.cleverwildcard.aboutme.AboutMeApplication
-com/cleverwildcard/aboutme/CommentController.java
- com.cleverwildcard.aboutme.CommentController
-com/cleverwildcard/aboutme/Comment.java
- com.cleverwildcard.aboutme.Comment

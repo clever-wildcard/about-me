@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--<html lang="en" xmlns:th="https://www.thymeleaf.org">-->
 <head>
     <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Bootstrap Theme Simply Me</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -95,9 +97,6 @@
     <h3>Hosting a website with AWS.</h3>
 </div>
 
-
-<p></p>
-
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
     <h3 class="margin">Version and Source Control Management</h3>
@@ -127,7 +126,6 @@
     </p>
 
 </div>
-
 
 <!-- Fourth Container -->
 <div class="container-fluid bg-2">
@@ -198,6 +196,24 @@
     </div>
 </div>
 
+<!-- Sixth Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Comment</h3>
+<!--    <form action="#" th:action="@{/}" th:object="${comment}" method="post">-->
+<!--        <p>Author: <input type="text" th:field="*{author}" style="color:gray;"/></p>-->
+<!--        <p>Message: <input type="text" th:field="*{content}" /></p>-->
+<!--        <p><input type="submit" value="Submit" /></p>-->
+<!--    </form>-->
+        <form id="comment-form">
+            <label for="author"></label><br>
+            <input type="text" id="author" name="author" value="Author"><br>
+            <label for="content"></label><br>
+            <input type="text" id="content" name="content" value="Content"><br><br>
+            <input type="submit" value="Submit"  onclick="submitForm()">
+        </form>
+<!--    <p th:text="'author: ' + ${comment.author.elements[0].value}" />-->
+<!--    <p th:text="'content: ' + ${comment.author.elements[0].value}" />-->
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
@@ -206,29 +222,25 @@
         <span class="glyphicon glyphicon-search"></span> Search
     </a>
 </footer>
+<script>
+    function submitForm() {
+        // $( '#comment-form').submit(function(event) {
+            event.preventDefault();
+            var x = document.getElementById("comment-form");
+            // var request = $.ajax({
+            //     url: "http://localhost:8080/comments",
+            //     type: 'POST',
+            //     data: {'author': x.elements[0].value, 'content': x.elements[1].value},
+            //     headers: {"Content-Type": "application/json"},
+            //     dataType: 'json',
+            //     success: success,
+            //     });
+            var posting = $.post("/comments", {'author': x.elements[0].value, 'content': x.elements[1].value}, {"Content-Type": "application/json"});
+            posting.done(function(data) {
+                document.getElementById("result").innerText = data;
+            });
+    }
+
+</script>
 </body>
 </html>
-
-
-
-<!--<div class="row">-->
-
-
-    <!--        <div class="file-structure" >-->
-    <!--            <hr style="width:3px;background-color:gray;height:80px;float:left;margin:0;">-->
-    <!--            <div>-->
-    <!--                <hr class="horizontal" style="width:10px;background-color:gray;height:3px;margin:0;float:left;">-->
-    <!--                <p style="width:100%;">index.html</p>-->
-    <!--            </div>-->
-    <!--            <hr class="horizontal" style="width:10px;background-color:gray;height:3px;margin:0;float:left;">-->
-    <!--            <p style="width:100%;">index.html</p>-->
-    <!--        </div>-->
-
-<!--</div>-->
-
-<!--        <div class="col-sm-6">-->
-
-<!--            <img class="fileStructure" alt="Project's current file structure." src="fileStructure.png" style="width:100%" />-->
-<!--        </div>-->
-
-<!--    <p style="border-left-width:1.5px;border-left-color:white;border-left-style:solid;padding:0;margin-left:6%;">-->
